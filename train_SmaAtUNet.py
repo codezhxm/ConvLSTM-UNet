@@ -1,6 +1,6 @@
 from typing import Optional
 
-from models.SmaAt_UNet import SmaAt_UNet
+from models.ConvLSTM-UNet import ConvLSTM-UNet
 import torch
 from torch.utils.data import DataLoader
 from torch import optim
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     )
 
     # Load SmaAt-UNet
-    model = SmaAt_UNet(n_channels=3, n_classes=21)
+    model = ConvLSTM-UNet(n_channels=3, n_classes=21)
     # Move model to device
     model.to(dev)
     # Define Optimizer and loss
