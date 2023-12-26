@@ -7,7 +7,6 @@ import os
 import pickle
 import numpy as np
 
-
 def get_metrics_from_model(model, test_dl, threshold=0.5):
     # Precision = tp/(tp+fp)
     # Recall = tp/(tp+fn)
